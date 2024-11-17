@@ -1,0 +1,20 @@
+C:\Users\valer\source\repos\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\bin\Debug\Cinemonopylo_YJSG VMG.exe.config
+C:\Users\valer\source\repos\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\bin\Debug\Cinemonopylo_YJSG VMG.exe
+C:\Users\valer\source\repos\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\bin\Debug\Cinemonopylo_YJSG VMG.pdb
+C:\Users\valer\source\repos\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.csproj.AssemblyReference.cache
+C:\Users\valer\source\repos\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.Form1.resources
+C:\Users\valer\source\repos\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.Properties.Resources.resources
+C:\Users\valer\source\repos\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.csproj.GenerateResource.cache
+C:\Users\valer\source\repos\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.csproj.CoreCompileInputs.cache
+C:\Users\valer\source\repos\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.exe
+C:\Users\valer\source\repos\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.pdb
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\bin\Debug\Cinemonopylo_YJSG VMG.exe.config
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\bin\Debug\Cinemonopylo_YJSG VMG.exe
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\bin\Debug\Cinemonopylo_YJSG VMG.pdb
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.csproj.AssemblyReference.cache
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.Form1.resources
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.Properties.Resources.resources
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.csproj.GenerateResource.cache
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.csproj.CoreCompileInputs.cache
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.exe
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.pdb
