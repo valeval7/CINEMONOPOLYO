@@ -18,3 +18,7 @@ C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cin
 C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.csproj.CoreCompileInputs.cache
 C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.exe
 C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.pdb
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\bin\Debug\Manejador.dll
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\bin\Debug\Manejador.pdb
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmComprar_Boletos.resources
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemono.4799D91F.Up2Date

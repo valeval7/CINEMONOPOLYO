@@ -5,6 +5,10 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinemonopylo_YJSG VMG", "Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG.csproj", "{5082158D-9A4A-40EF-8E43-4D61354E6E48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatos", "AccesoDatos\AccesoDatos.csproj", "{D076003E-D37B-4569-AFD2-10A9406781F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manejador", "Manejador\Manejador.csproj", "{9F795A94-F783-410E-8DC6-B808C3C0BB8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{5082158D-9A4A-40EF-8E43-4D61354E6E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5082158D-9A4A-40EF-8E43-4D61354E6E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5082158D-9A4A-40EF-8E43-4D61354E6E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D076003E-D37B-4569-AFD2-10A9406781F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D076003E-D37B-4569-AFD2-10A9406781F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D076003E-D37B-4569-AFD2-10A9406781F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D076003E-D37B-4569-AFD2-10A9406781F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F795A94-F783-410E-8DC6-B808C3C0BB8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F795A94-F783-410E-8DC6-B808C3C0BB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F795A94-F783-410E-8DC6-B808C3C0BB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F795A94-F783-410E-8DC6-B808C3C0BB8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

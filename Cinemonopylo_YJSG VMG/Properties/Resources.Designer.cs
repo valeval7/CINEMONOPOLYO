@@ -113,6 +113,16 @@ namespace Cinemonopylo_YJSG_VMG.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _9 {
+            get {
+                object obj = ResourceManager.GetObject("9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICONOS__HORIZONTALES_VMG {
             get {
                 object obj = ResourceManager.GetObject("ICONOS  HORIZONTALES VMG", resourceCulture);

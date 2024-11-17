@@ -1,0 +1,6 @@
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Manejador\bin\Debug\Manejador.dll
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Manejador\bin\Debug\Manejador.pdb
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Manejador\obj\Debug\Manejador.csproj.AssemblyReference.cache
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Manejador\obj\Debug\Manejador.csproj.CoreCompileInputs.cache
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Manejador\obj\Debug\Manejador.dll
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Manejador\obj\Debug\Manejador.pdb
