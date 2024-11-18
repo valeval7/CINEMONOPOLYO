@@ -1,38 +1,94 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using AccesoDatos;
 
 namespace Manejador
 {
     public class ManejadorCliente
     {
-        private const decimal PRECIO_BOLETO = 80.00M;
+        Base b = new Base("localhost", "root", "", "cinemonopolyo");
+
+        private const decimal PRECIO_BOLETO = 50.00M;
         private List<Button> asientosSeleccionados = new List<Button>();
 
-        public void InicializarFormulario(ComboBox cmbPeliculas, ComboBox cmbHorarios, Panel pnlAsientos, Button btnConfirmar, FlowLayoutPanel pnlResumen)
+        public void InicializarFormulario(ComboBox cmbProductos, ComboBox cmbPeliculas, ComboBox cmbHorarios, Panel pnlAsientos, Button btnConfirmar, FlowLayoutPanel pnlResumen, Label lblSala, Label lblHorario)
         {
-            CargarDatosDePrueba(cmbPeliculas, cmbHorarios);
+            CargarDatosDePrueba(cmbProductos, cmbPeliculas, cmbHorarios, lblSala, lblHorario);
             ConfigurarSala(pnlAsientos);
             ConfigurarEventos(cmbPeliculas, cmbHorarios, btnConfirmar, pnlAsientos, pnlResumen);
         }
 
-        private void CargarDatosDePrueba(ComboBox cmbPeliculas, ComboBox cmbHorarios)
+        private void CargarDatosDePrueba(ComboBox cmbProductos, ComboBox cmbPeliculas, ComboBox cmbHorarios, Label lblSala, Label lblHorario)
         {
-            cmbPeliculas.Items.AddRange(new string[]
-            {
-                "Dune: Parte 2",
-                "Kung Fu Panda 4",
-                "Ghostbusters: Imperio Helado"
-            });
+            cmbPeliculas.Items.Clear();
+            cmbHorarios.Items.Clear();
 
-            cmbHorarios.Items.AddRange(new string[]
+            try
             {
-                "14:30",
-                "17:00",
-                "19:30",
-                "22:00"
-            });
+                DataTable productos = b.Consultar("SELECT nombre FROM Productos", "Productos").Tables[0];
+                foreach (DataRow row in productos.Rows)
+                {
+                    cmbProductos.Items.Add(new { Producto = row["nombre"].ToString()});
+                }
+
+                DataTable peliculas = b.Consultar("SELECT id, titulo FROM Peliculas", "Peliculas").Tables[0];
+                foreach (DataRow row in peliculas.Rows)
+                {
+                    cmbPeliculas.Items.Add(new { Titulo = row["titulo"].ToString(), Id = row["id"] });
+                }
+
+       
+                cmbPeliculas.SelectedIndexChanged += (sender, e) =>
+                {
+                    if (cmbPeliculas.SelectedItem != null)
+                    {
+                        // Obtén el id de la película seleccionada
+                        dynamic peliculaSeleccionada = cmbPeliculas.SelectedItem;
+                        int peliculaId = peliculaSeleccionada.Id;
+
+                        // Limpia los horarios
+                        cmbHorarios.Items.Clear();
+
+                        // Consulta para obtener sala_id y horarios de la película seleccionada
+                        DataTable datosHorarios = b.Consultar(
+                            $"SELECT id, sala_id, fecha_hora FROM Horarios WHERE pelicula_id = {peliculaId}",
+                            "Horarios"
+                        ).Tables[0];
+
+                        if (datosHorarios.Rows.Count > 0)
+                        {
+                            int horarioId = Convert.ToInt32(datosHorarios.Rows[0]["id"]);
+                            lblHorario.Text = $"Id: {horarioId}";
+                            int salaId = Convert.ToInt32(datosHorarios.Rows[0]["sala_id"]);
+                            lblSala.Text = $"Sala: {salaId}";
+
+                            // Agrega los horarios al ComboBox
+                            foreach (DataRow row in datosHorarios.Rows)
+                            {
+                                DateTime fechaHora = Convert.ToDateTime(row["fecha_hora"]);
+                                cmbHorarios.Items.Add(fechaHora.ToString("dd/MM/yyyy HH:mm"));
+                            }
+                        }
+                        else
+                        {
+                            lblSala.Text = "Sala: No disponible";
+                            MessageBox.Show("No se encontraron horarios para esta película.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+
+
+                    }
+                };
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ConfigurarSala(Panel pnlAsientos)
@@ -207,5 +263,40 @@ namespace Manejador
                 }
             }
         }
+
+        public string GuardarVenta(int horarioId, int usuarioId)
+        {
+            try
+            {
+           
+                string asientosString = string.Join(",", asientosSeleccionados.Select(a => a.Text));
+
+                
+                string queryVentaBoletos = $@"
+            INSERT INTO VentasBoletos (horario_id, cantidad, asiento, metodo_pago, estado) 
+            VALUES ({horarioId}, {asientosSeleccionados.Count}, '{asientosString}', 'EFECTIVO', 'Pagado')";
+
+               
+                b.Comando(queryVentaBoletos);
+
+               
+                string queryIdVentaBoletos = "SELECT LAST_INSERT_ID()";
+                var ventaBoletosId = b.Comando(queryIdVentaBoletos);
+
+               
+                decimal total = asientosSeleccionados.Count * PRECIO_BOLETO;
+                string queryDetallesVenta = $@"
+            INSERT INTO DetallesVenta (VentasBoletos_id, usuario_id, Total) 
+            VALUES ({ventaBoletosId}, {usuarioId}, {total})";
+
+              
+                return b.Comando(queryDetallesVenta);
+            }
+            catch (Exception ex)
+            {
+                return $"Error al guardar la venta: {ex.Message}";
+            }
+        }
+
     }
 }

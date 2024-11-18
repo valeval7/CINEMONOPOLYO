@@ -3,32 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\frmcomprar boletos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\frmcomprar boletos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F795A94-F783-410E-8DC6-B808C3C0BB8B}|Manejador\\Manejador.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\manejador\\manejadorcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F795A94-F783-410E-8DC6-B808C3C0BB8B}|Manejador\\Manejador.csproj|solutionrelative:manejador\\manejadorcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\frmagregarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\frmagregarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\frmcomprar boletos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\frmcomprar boletos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\frmmenutaquilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\frmmenutaquilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\frmmenutaquilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\frmmenutaquilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D076003E-D37B-4569-AFD2-10A9406781F0}|AccesoDatos\\AccesoDatos.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\accesodatos\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D076003E-D37B-4569-AFD2-10A9406781F0}|AccesoDatos\\AccesoDatos.csproj|solutionrelative:accesodatos\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\frmmenuadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\frmmenuadministrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\frmcomprar boletos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\frmcomprar boletos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\cinemonopylo_yjsg vmg\\frmcomprar boletos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5082158D-9A4A-40EF-8E43-4D61354E6E48}|Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG.csproj|solutionrelative:cinemonopylo_yjsg vmg\\frmcomprar boletos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F795A94-F783-410E-8DC6-B808C3C0BB8B}|Manejador\\Manejador.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\manejador\\manejadorcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F795A94-F783-410E-8DC6-B808C3C0BB8B}|Manejador\\Manejador.csproj|solutionrelative:manejador\\manejadorcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F795A94-F783-410E-8DC6-B808C3C0BB8B}|Manejador\\Manejador.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\manejador\\manejadorlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F795A94-F783-410E-8DC6-B808C3C0BB8B}|Manejador\\Manejador.csproj|solutionrelative:manejador\\manejadorlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F795A94-F783-410E-8DC6-B808C3C0BB8B}|Manejador\\Manejador.csproj|c:\\users\\valer\\desktop\\cinemonopylo_yjsg vmg\\manejador\\manejadorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F795A94-F783-410E-8DC6-B808C3C0BB8B}|Manejador\\Manejador.csproj|solutionrelative:manejador\\manejadorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,71 +62,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\Form1.cs",
-              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\Form1.cs",
-              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T21:07:08.289Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\Form1.cs",
-              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\Form1.cs",
-              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\Form1.cs",
-              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\Form1.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAqwB0AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T21:26:42.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmComprar Boletos.cs",
-              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs",
-              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs",
-              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs",
-              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T21:12:30.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmComprar Boletos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs",
-              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs",
-              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T21:07:30.123Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ManejadorCliente.cs",
-              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Manejador\\ManejadorCliente.cs",
-              "RelativeDocumentMoniker": "Manejador\\ManejadorCliente.cs",
-              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Manejador\\ManejadorCliente.cs",
-              "RelativeToolTip": "Manejador\\ManejadorCliente.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAA8wCoAAAAeAAAAAAAAAA==",
+              "Title": "FrmAgregarUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmAgregarUsuarios.cs",
+              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\FrmAgregarUsuarios.cs",
+              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmAgregarUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\FrmAgregarUsuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:55:32.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T05:48:45.425Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -112,22 +84,147 @@
               "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\Program.cs",
               "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\Program.cs",
               "RelativeToolTip": "Cinemonopylo_YJSG VMG\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T21:05:06.502Z",
+              "WhenOpened": "2024-11-18T05:45:11.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\Menu.cs",
+              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\Menu.cs",
+              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\Menu.cs",
+              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\Menu.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwDcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:44:38.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\Menu.cs",
+              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\Menu.cs",
+              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\Menu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\Menu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:44:35.175Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmMenuTaquilla.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmMenuTaquilla.cs",
+              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\FrmMenuTaquilla.cs",
+              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmMenuTaquilla.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\FrmMenuTaquilla.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:27:11.608Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmMenuTaquilla.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmMenuTaquilla.cs",
+              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\FrmMenuTaquilla.cs",
+              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmMenuTaquilla.cs",
+              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\FrmMenuTaquilla.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:44:06.868Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Base.cs",
-              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\AccesoDatos\\Base.cs",
-              "RelativeDocumentMoniker": "AccesoDatos\\Base.cs",
-              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\AccesoDatos\\Base.cs",
-              "RelativeToolTip": "AccesoDatos\\Base.cs",
+              "Title": "FrmUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmUsuarios.cs",
+              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\FrmUsuarios.cs",
+              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\FrmUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:44:31.06Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmMenuAdministrador.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmMenuAdministrador.cs",
+              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\FrmMenuAdministrador.cs",
+              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmMenuAdministrador.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\FrmMenuAdministrador.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:44:29.238Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmComprar Boletos.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs",
+              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs",
+              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs",
+              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAmwCMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:33:07.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmComprar Boletos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs",
+              "RelativeDocumentMoniker": "Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs",
+              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Cinemonopylo_YJSG VMG\\FrmComprar Boletos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:27:24.037Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ManejadorCliente.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Manejador\\ManejadorCliente.cs",
+              "RelativeDocumentMoniker": "Manejador\\ManejadorCliente.cs",
+              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Manejador\\ManejadorCliente.cs",
+              "RelativeToolTip": "Manejador\\ManejadorCliente.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAmwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:34:15.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ManejadorLogin.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Manejador\\ManejadorLogin.cs",
+              "RelativeDocumentMoniker": "Manejador\\ManejadorLogin.cs",
+              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Manejador\\ManejadorLogin.cs",
+              "RelativeToolTip": "Manejador\\ManejadorLogin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:55:12.476Z",
+              "WhenOpened": "2024-11-18T05:34:03.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ManejadorUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Manejador\\ManejadorUsuarios.cs",
+              "RelativeDocumentMoniker": "Manejador\\ManejadorUsuarios.cs",
+              "ToolTip": "C:\\Users\\valer\\Desktop\\Cinemonopylo_YJSG VMG\\Manejador\\ManejadorUsuarios.cs",
+              "RelativeToolTip": "Manejador\\ManejadorUsuarios.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:34:10.311Z",
               "EditorCaption": ""
             }
           ]

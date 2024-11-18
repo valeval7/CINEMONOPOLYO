@@ -1,18 +1,17 @@
 CREATE DATABASE cinemonopolyo;
 USE cinemonopolyo;
 
-CREATE TABLE Usuarios (
+CREATE TABLE IF NOT EXISTS Usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    Nombre VARCHAR(50) NOT NULL,
-    ApellidoPaterno VARCHAR(50) NOT NULL,
-    ApellidoMaterno VARCHAR(50) NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    username VARCHAR(100) UNIQUE NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    rol ENUM('Cliente', 'Taquillero', 'Administrador') NOT NULL,
+    Nombre VARCHAR(50) NULL,
+    ApellidoPaterno VARCHAR(50) NULL,
+    ApellidoMaterno VARCHAR(50) NULL,
+    email VARCHAR(100) NULL,
+    username VARCHAR(100) UNIQUE NULL,
+    password VARCHAR(255) NULL,
+    rol ENUM('Cliente', 'Taquillero', 'Administrador', 'Invitado') NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
 
 CREATE TABLE Peliculas (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -21,38 +20,26 @@ CREATE TABLE Peliculas (
     duracion INT NOT NULL,
     clasificacion ENUM('A', 'B', 'C', 'D') NOT NULL,
     genero VARCHAR(50),
+    precio DECIMAL(10, 2) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-
+-- Tabla Salas
 CREATE TABLE Salas (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
-    capacidad INT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-
+-- Tabla Horarios
 CREATE TABLE Horarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     pelicula_id INT NOT NULL,
     sala_id INT NOT NULL,
     fecha_hora DATETIME NOT NULL,
+    boletos_existentes INT NOT NULL,
     FOREIGN KEY (pelicula_id) REFERENCES Peliculas(id),
     FOREIGN KEY (sala_id) REFERENCES Salas(id),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-
-CREATE TABLE Boletos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    horario_id INT NOT NULL,
-    usuario_id INT NOT NULL,
-    asiento VARCHAR(10) NOT NULL,
-    precio DECIMAL(10, 2) NOT NULL,
-    estado ENUM('Reservado', 'Pagado', 'Cancelado') DEFAULT 'Reservado',
-    FOREIGN KEY (horario_id) REFERENCES Horarios(id),
-    FOREIGN KEY (usuario_id) REFERENCES Usuarios(id),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -66,37 +53,49 @@ CREATE TABLE Productos (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-
-CREATE TABLE Ventas (
+-- Tabla VentasBoletos
+CREATE TABLE VentasBoletos(
     id INT AUTO_INCREMENT PRIMARY KEY,
-    usuario_id INT NOT NULL,
-    total DECIMAL(10, 2) NOT NULL,
+    horario_id INT NOT NULL,
+    cantidad INT NOT NULL,
+    asiento VARCHAR(10) NOT NULL,
     metodo_pago ENUM('EFECTIVO', 'TARJETA DE CREDITO') NOT NULL,
+    estado ENUM('Reservado', 'Pagado', 'Cancelado') DEFAULT 'Reservado',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (usuario_id) REFERENCES Usuarios(id)
+    FOREIGN KEY (horario_id) REFERENCES Horarios(id)
 );
 
 
-CREATE TABLE DetallesVenta (
+CREATE TABLE VentasProductos(
     id INT AUTO_INCREMENT PRIMARY KEY,
-    venta_id INT NOT NULL,
     producto_id INT NOT NULL,
     cantidad INT NOT NULL,
-    precio DECIMAL(10, 2) NOT NULL,
-    FOREIGN KEY (venta_id) REFERENCES Ventas(id),
-    FOREIGN KEY (producto_id) REFERENCES Productos(id),
+    metodo_pago ENUM('EFECTIVO', 'TARJETA DE CREDITO') NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (producto_id) REFERENCES Productos(id)
+);
+
+CREATE TABLE DetallesVenta (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    VentasBoletos_id INT NULL,
+    VentasProductos_id INT NULL,
+    usuario_id INT NOT NULL,
+    Total DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (VentasBoletos_id) REFERENCES VentasBoletos(id),
+    FOREIGN KEY (VentasProductos_id) REFERENCES VentasProductos(id),
+    FOREIGN KEY (usuario_id) REFERENCES Usuarios(id),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 DELIMITER //
 CREATE TRIGGER descontar_boletos
-AFTER INSERT ON Boletos
+AFTER INSERT ON VentasBoletos
 FOR EACH ROW
 BEGIN
     IF NEW.estado = 'Pagado' THEN
-        UPDATE Salas
-        SET capacidad = capacidad - 1
-        WHERE id = (SELECT sala_id FROM Horarios WHERE id = NEW.horario_id);
+        UPDATE Horarios
+        SET boletos_existentes = boletos_existentes - NEW.cantidad
+        WHERE id = NEW.horario_id;
     END IF;
 END;
 //
@@ -104,7 +103,7 @@ DELIMITER ;
 
 DELIMITER //
 CREATE TRIGGER descontar_inventario
-AFTER INSERT ON DetallesVenta
+AFTER INSERT ON VentasProductos
 FOR EACH ROW
 BEGIN
     UPDATE Productos
@@ -121,13 +120,13 @@ DELIMITER ;
 
 DELIMITER //
 CREATE TRIGGER restaurar_boletos
-AFTER UPDATE ON Boletos
+AFTER UPDATE ON VentasBoletos
 FOR EACH ROW
 BEGIN
     IF NEW.estado = 'Cancelado' THEN
-        UPDATE Salas
-        SET capacidad = capacidad + 1
-        WHERE id = (SELECT sala_id FROM Horarios WHERE id = NEW.horario_id);
+        UPDATE Horarios
+        SET boletos_existentes = boletos_existentes + OLD.cantidad
+        WHERE id = OLD.horario_id;
     END IF;
 END;
 //
@@ -145,14 +144,15 @@ BEGIN
     SELECT COUNT(*) INTO x FROM Usuarios WHERE username = _username AND password = _password;
     
     IF x > 0 THEN
-        SELECT 'Correcto' AS rs, 
+        SELECT 'C0rr3cto' AS rs, 
                (SELECT rol FROM Usuarios WHERE username = _username AND password = _password) AS rol,
-               (SELECT email FROM Usuarios WHERE username = _username AND password = _password) AS email;
+               (SELECT id FROM Usuarios WHERE username = _username AND password = _password) AS id;
     ELSE
         SELECT 'Error' AS rs, 0 AS rol;
     END IF;
 END //
 DELIMITER ;
+CALL p_ValidarU('vmg', SHA1('1234'));
 
 DELIMITER //
 CREATE PROCEDURE p_InsertarGenerico
@@ -198,4 +198,86 @@ BEGIN
     DEALLOCATE PREPARE stmt;
 END //
 DELIMITER ;
+
+
+CALL p_InsertarGenerico(
+    'Peliculas', 
+    'titulo, sinopsis, duracion, clasificacion, genero, precio', 
+    '"Avengers: Endgame", "La batalla final contra Thanos.", 180, "A", "Acción", 150.00'
+);
+
+CALL p_InsertarGenerico(
+    'Peliculas', 
+    'titulo, sinopsis, duracion, clasificacion, genero, precio', 
+    '"The Lion King", "La historia de Simba, el joven león.", 120, "B", "Animación", 120.00'
+);
+
+CALL p_InsertarGenerico(
+    'Peliculas', 
+    'titulo, sinopsis, duracion, clasificacion, genero, precio', 
+    '"Joker", "La historia de origen del villano Joker.", 140, "C", "Drama", 130.00'
+);
+
+-- Insertar registros en la tabla Salas
+CALL p_InsertarGenerico(
+    'Salas', 
+    'nombre', 
+    '"Sala 1"'
+);
+
+CALL p_InsertarGenerico(
+    'Salas', 
+    'nombre', 
+    '"Sala 2"'
+);
+
+CALL p_InsertarGenerico(
+    'Salas', 
+    'nombre', 
+    '"Sala 3"'
+);
+
+-- Insertar registros en la tabla Horarios
+-- Asumiendo que las IDs generadas para las Peliculas y Salas son 1, 2, 3 respectivamente
+CALL p_InsertarGenerico(
+    'Horarios', 
+    'pelicula_id, sala_id, fecha_hora, boletos_existentes', 
+    '1, 1, "2024-11-18 15:00:00", 100'
+);
+
+CALL p_InsertarGenerico(
+    'Horarios', 
+    'pelicula_id, sala_id, fecha_hora, boletos_existentes', 
+    '2, 2, "2024-11-18 18:00:00", 100'
+);
+
+CALL p_InsertarGenerico(
+    'Horarios', 
+    'pelicula_id, sala_id, fecha_hora, boletos_existentes', 
+    '3, 3, "2024-11-18 21:00:00", 80'
+);
+
+
+
+
+DELIMITER //
+CREATE PROCEDURE p_CrearUsuarioInvitado()
+BEGIN
+    DECLARE nuevo_id INT;
+    
+    -- Insert the guest user
+    INSERT INTO Usuarios (rol) VALUES ('Invitado');
+    
+    -- Get the new user's ID
+    SET nuevo_id = LAST_INSERT_ID();
+    
+    -- Return the new user's information
+    SELECT 
+        nuevo_id AS id,
+        'Invitado' AS rol,
+        'C0rr3cto' AS rs;
+END //
+DELIMITER ;
+
+SELECT * FROM USUARIOS;
 
