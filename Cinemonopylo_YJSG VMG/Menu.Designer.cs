@@ -137,6 +137,7 @@
             this.btnTaquilla.Name = "btnTaquilla";
             this.btnTaquilla.Size = new System.Drawing.Size(170, 170);
             this.btnTaquilla.Text = "Módulo de TAQUILLA";
+            this.btnTaquilla.Click += new System.EventHandler(this.btnTaquilla_Click);
             // 
             // btnAdministrar
             // 
@@ -148,6 +149,7 @@
             this.btnAdministrar.Name = "btnAdministrar";
             this.btnAdministrar.Size = new System.Drawing.Size(170, 170);
             this.btnAdministrar.Text = "Módulo para ADMINISTRAR";
+            this.btnAdministrar.Click += new System.EventHandler(this.btnAdministrar_Click);
             // 
             // btnSalir
             // 

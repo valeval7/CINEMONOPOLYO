@@ -38,6 +38,8 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.lblEliminar = new System.Windows.Forms.Label();
+            this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAdministrador)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +99,7 @@
             this.lblModificar.BackColor = System.Drawing.Color.Firebrick;
             this.lblModificar.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8F, System.Drawing.FontStyle.Bold);
             this.lblModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblModificar.Location = new System.Drawing.Point(1533, 195);
+            this.lblModificar.Location = new System.Drawing.Point(1371, 194);
             this.lblModificar.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblModificar.Name = "lblModificar";
             this.lblModificar.Size = new System.Drawing.Size(146, 28);
@@ -108,8 +110,9 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnModificar.BackgroundImage = global::Cinemonopylo_YJSG_VMG.Properties.Resources._22;
             this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnModificar.Location = new System.Drawing.Point(1538, 66);
+            this.btnModificar.Location = new System.Drawing.Point(1376, 65);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(137, 124);
@@ -122,7 +125,7 @@
             this.label5.BackColor = System.Drawing.Color.Firebrick;
             this.label5.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(1384, 195);
+            this.label5.Location = new System.Drawing.Point(1222, 194);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(137, 28);
@@ -133,8 +136,9 @@
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgregar.BackgroundImage = global::Cinemonopylo_YJSG_VMG.Properties.Resources._23;
             this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAgregar.Location = new System.Drawing.Point(1384, 66);
+            this.btnAgregar.Location = new System.Drawing.Point(1222, 65);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(137, 124);
@@ -156,6 +160,7 @@
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.BackgroundImage = global::Cinemonopylo_YJSG_VMG.Properties.Resources._91;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancelar.Location = new System.Drawing.Point(1701, 66);
             this.btnCancelar.Name = "btnCancelar";
@@ -163,6 +168,31 @@
             this.btnCancelar.TabIndex = 35;
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // lblEliminar
+            // 
+            this.lblEliminar.BackColor = System.Drawing.Color.Firebrick;
+            this.lblEliminar.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8F, System.Drawing.FontStyle.Bold);
+            this.lblEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblEliminar.Location = new System.Drawing.Point(1525, 194);
+            this.lblEliminar.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblEliminar.Name = "lblEliminar";
+            this.lblEliminar.Size = new System.Drawing.Size(137, 28);
+            this.lblEliminar.TabIndex = 48;
+            this.lblEliminar.Text = "ELIMINAR";
+            this.lblEliminar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEliminar.BackgroundImage = global::Cinemonopylo_YJSG_VMG.Properties.Resources._19;
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEliminar.Location = new System.Drawing.Point(1525, 65);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(137, 124);
+            this.btnEliminar.TabIndex = 49;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // FrmUsuarios
             // 
@@ -174,6 +204,8 @@
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1200);
+            this.Controls.Add(this.lblEliminar);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.lblModificar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.label5);
@@ -210,5 +242,7 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label lblEliminar;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }

@@ -37,7 +37,7 @@ namespace Cinemonopylo_YJSG_VMG
             }
             if (ManejadorLogin.Tipo.Equals("Administrador"))
             {
-                btnClientes.Visible = true;
+                btnClientes.Visible = false;
                 btnTaquilla.Visible = true;
                 btnAdministrar.Visible = true;
             }
@@ -52,6 +52,20 @@ namespace Cinemonopylo_YJSG_VMG
         private void btnClientes_Click(object sender, EventArgs e)
         {
             FrmComprar_Boletos a = new FrmComprar_Boletos();
+            a.Show();
+            groupBox1.Enabled = false;
+        }
+
+        private void btnTaquilla_Click(object sender, EventArgs e)
+        {
+            FrmMenuTaquilla a = new FrmMenuTaquilla();
+            a.Show();
+            groupBox1.Enabled = false;
+        }
+
+        private void btnAdministrar_Click(object sender, EventArgs e)
+        {
+            FrmMenuAdministrador a = new FrmMenuAdministrador();
             a.Show();
             groupBox1.Enabled = false;
         }

@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAgregarPeliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarPeliculas.Designer.cs">
+      <DependentUpon>FrmAgregarPeliculas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAgregarProductos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAgregarProductos.Designer.cs">
       <DependentUpon>FrmAgregarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgregarSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarSalas.Designer.cs">
+      <DependentUpon>FrmAgregarSalas.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAgregarUsuarios.cs">
       <SubType>Form</SubType>
@@ -102,8 +114,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAgregarPeliculas.resx">
+      <DependentUpon>FrmAgregarPeliculas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAgregarProductos.resx">
       <DependentUpon>FrmAgregarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarSalas.resx">
+      <DependentUpon>FrmAgregarSalas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAgregarUsuarios.resx">
       <DependentUpon>FrmAgregarUsuarios.cs</DependentUpon>
@@ -220,6 +238,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TBD-PROYECTO FINAL-YJGSVMG-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICONOS VMG-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TBD-PROYECTO FINAL-YJGSVMG-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

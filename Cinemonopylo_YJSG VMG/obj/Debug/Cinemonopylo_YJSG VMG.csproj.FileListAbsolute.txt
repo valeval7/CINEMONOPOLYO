@@ -56,7 +56,8 @@ C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cin
 C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Presentacion_TallerAutomotiz.FrmAgregarUsuarios.resources
 C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmMenuAdministrador.resources
 C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmMenuTaquilla.resources
-C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmTaquilla.resources
 C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.Menu.resources
 C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Presentacion_TallerAutomotiz.FrmUsuarios.resources
 C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.Peliculas.resources
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmAgregarPeliculas.resources
+C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmAgregarSalas.resources

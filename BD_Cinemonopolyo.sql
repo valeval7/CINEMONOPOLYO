@@ -24,14 +24,15 @@ CREATE TABLE Peliculas (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Tabla Salas
+
 CREATE TABLE Salas (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
+    ubicacion VARCHAR(250),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Tabla Horarios
+
 CREATE TABLE Horarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     pelicula_id INT NOT NULL,

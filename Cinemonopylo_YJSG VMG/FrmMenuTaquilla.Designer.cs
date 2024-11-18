@@ -51,7 +51,7 @@
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(302, 1080);
+            this.toolStrip1.Size = new System.Drawing.Size(302, 1500);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -84,12 +84,13 @@
             this.btnProductos.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(250, 120);
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.AutoSize = false;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(300, 400);
+            this.toolStripLabel1.Size = new System.Drawing.Size(300, 200);
             // 
             // btnSalir
             // 
@@ -101,17 +102,24 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(100, 100);
             this.btnSalir.Text = "CERRAR SESIÓN";
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmMenuTaquilla
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(2100, 1500);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
+            this.Location = new System.Drawing.Point(310, 100);
+            this.MaximumSize = new System.Drawing.Size(2100, 1500);
+            this.MinimumSize = new System.Drawing.Size(2100, 1500);
             this.Name = "FrmMenuTaquilla";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FrmMenuTaquilla";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

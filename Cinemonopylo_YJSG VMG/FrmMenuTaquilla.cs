@@ -25,9 +25,16 @@ namespace Cinemonopylo_YJSG_VMG
             a.Show();
         }
 
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            FrmAgregarProductos a = new FrmAgregarProductos();
+            a.MdiParent = this;
+            a.Show();
+        }
 
-
-
-
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

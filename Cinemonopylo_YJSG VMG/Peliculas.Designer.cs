@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.lblModificar = new System.Windows.Forms.Label();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,6 +38,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblEliminar = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAdministrador)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,17 +56,6 @@
             this.lblModificar.Text = "MODIFICAR";
             this.lblModificar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnModificar.Location = new System.Drawing.Point(1379, 78);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(137, 124);
-            this.btnModificar.TabIndex = 43;
-            this.btnModificar.UseVisualStyleBackColor = false;
-            // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.Firebrick;
@@ -79,17 +68,6 @@
             this.label5.TabIndex = 41;
             this.label5.Text = "AGREGAR";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAgregar.Location = new System.Drawing.Point(1225, 78);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(137, 124);
-            this.btnAgregar.TabIndex = 44;
-            this.btnAgregar.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -105,6 +83,7 @@
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.BackgroundImage = global::Cinemonopylo_YJSG_VMG.Properties.Resources._91;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancelar.Location = new System.Drawing.Point(1700, 78);
             this.btnCancelar.Name = "btnCancelar";
@@ -177,6 +156,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEliminar.BackgroundImage = global::Cinemonopylo_YJSG_VMG.Properties.Resources._19;
             this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEliminar.Location = new System.Drawing.Point(1538, 78);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -184,6 +164,31 @@
             this.btnEliminar.Size = new System.Drawing.Size(137, 124);
             this.btnEliminar.TabIndex = 47;
             this.btnEliminar.UseVisualStyleBackColor = false;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnModificar.BackgroundImage = global::Cinemonopylo_YJSG_VMG.Properties.Resources._22;
+            this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnModificar.Location = new System.Drawing.Point(1379, 78);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(137, 124);
+            this.btnModificar.TabIndex = 43;
+            this.btnModificar.UseVisualStyleBackColor = false;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgregar.BackgroundImage = global::Cinemonopylo_YJSG_VMG.Properties.Resources._23;
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregar.Location = new System.Drawing.Point(1225, 78);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(137, 124);
+            this.btnAgregar.TabIndex = 44;
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // Peliculas
             // 
