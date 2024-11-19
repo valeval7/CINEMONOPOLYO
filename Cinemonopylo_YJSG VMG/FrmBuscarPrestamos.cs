@@ -20,13 +20,30 @@ namespace PROYECTO
         public static int IdPelicula = 0, duracion=0;
         public  static string titulo, sinopsis, clasificacion, genero;
         public static decimal precio;
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (fila >= 0)
+            {
+                IdPelicula = int.Parse(dtgvDatos.Rows[fila].Cells[0].Value.ToString());
+                titulo = dtgvDatos.Rows[fila].Cells[1].Value.ToString();
+                sinopsis = dtgvDatos.Rows[fila].Cells[2].Value.ToString();
+                duracion = int.Parse(dtgvDatos.Rows[fila].Cells[3].Value.ToString());
+                clasificacion = dtgvDatos.Rows[fila].Cells[4].Value.ToString();
+                genero = dtgvDatos.Rows[fila].Cells[5].Value.ToString();
+                precio = decimal.Parse(dtgvDatos.Rows[fila].Cells[6].Value.ToString());
+                Close();
+                txtBuscar.Focus();
+            }
+            else
+                MessageBox.Show("Por favor, seleccione una fila válida.");
+        }
+
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             IdPelicula = 0; 
             Close();
         }
-
-        public static DateTime FechaDevolucion = new DateTime();
 
         public FrmBuscarPrestamos()
         {
@@ -42,24 +59,7 @@ namespace PROYECTO
 
         private void dtgvDatos_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            fila = e.RowIndex; columna = e.ColumnIndex;
-            switch (columna)
-            {
-                case 07:
-                    {
-                        IdPelicula = int.Parse(dtgvDatos.Rows[fila].Cells[0].Value.ToString());
-                        titulo = dtgvDatos.Rows[fila].Cells[1].Value.ToString();
-                        sinopsis = dtgvDatos.Rows[fila].Cells[2].Value.ToString();
-                        duracion = int.Parse(dtgvDatos.Rows[fila].Cells[3].Value.ToString());
-                        clasificacion = dtgvDatos.Rows[fila].Cells[4].Value.ToString();
-                        genero = dtgvDatos.Rows[fila].Cells[5].Value.ToString();
-                        precio = decimal.Parse(dtgvDatos.Rows[fila].Cells[6].Value.ToString());
-                  
-                        Close();
-                        txtBuscar.Focus();
-                    }
-                    break;
-            }
+           
         }
     }
 }

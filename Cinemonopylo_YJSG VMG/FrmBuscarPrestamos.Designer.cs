@@ -32,8 +32,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.dtgvDatos = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,47 +76,77 @@
             this.dtgvDatos.AllowUserToAddRows = false;
             this.dtgvDatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(210)))), ((int)(((byte)(212)))));
             this.dtgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvDatos.Location = new System.Drawing.Point(90, 208);
+            this.dtgvDatos.Location = new System.Drawing.Point(71, 209);
             this.dtgvDatos.Margin = new System.Windows.Forms.Padding(6);
             this.dtgvDatos.Name = "dtgvDatos";
             this.dtgvDatos.ReadOnly = true;
             this.dtgvDatos.RowHeadersWidth = 82;
             this.dtgvDatos.RowTemplate.Height = 33;
-            this.dtgvDatos.Size = new System.Drawing.Size(1073, 419);
+            this.dtgvDatos.Size = new System.Drawing.Size(1260, 419);
             this.dtgvDatos.TabIndex = 13;
             this.dtgvDatos.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDatos_CellEnter);
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 7.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Firebrick;
-            this.label3.Location = new System.Drawing.Point(1042, 169);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 25);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "REGRESAR";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.GhostWhite;
             this.btnRegresar.BackgroundImage = global::Cinemonopylo_YJSG_VMG.Properties.Resources._91;
             this.btnRegresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRegresar.Location = new System.Drawing.Point(1029, 28);
+            this.btnRegresar.Location = new System.Drawing.Point(1193, 29);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(6);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(157, 135);
+            this.btnRegresar.Size = new System.Drawing.Size(137, 124);
             this.btnRegresar.TabIndex = 15;
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Firebrick;
+            this.label5.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(1044, 159);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(137, 28);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "ACEPTA";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgregar.BackgroundImage = global::Cinemonopylo_YJSG_VMG.Properties.Resources._23;
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregar.Location = new System.Drawing.Point(1044, 30);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(137, 124);
+            this.btnAgregar.TabIndex = 35;
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Firebrick;
+            this.label3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(1194, 159);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(137, 28);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "CANCELAR";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // FrmBuscarPrestamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(1244, 659);
+            this.ClientSize = new System.Drawing.Size(1410, 659);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -136,7 +168,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.DataGridView dtgvDatos;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Label label3;
     }
 }

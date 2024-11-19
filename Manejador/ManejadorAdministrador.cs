@@ -31,21 +31,12 @@ namespace Manejador
         {
             Tabla.Columns.Clear();
             DataTable datos = b.Consultar($"SELECT * FROM Peliculas WHERE titulo LIKE '%{filtro}%'", "Peliculas").Tables[0];
-            Tabla.Columns.Insert(7, Boton("Aceptar", Color.Red));
+            Tabla.DataSource = datos;
             Tabla.AutoResizeColumns();
             Tabla.AutoResizeRows();
         }
 
-        DataGridViewButtonColumn Boton(string t, Color f)
-        {
-            DataGridViewButtonColumn x = new DataGridViewButtonColumn();
-            x.Text = t;
-            x.UseColumnTextForButtonValue = true;
-            x.FlatStyle = FlatStyle.Popup;
-            x.DefaultCellStyle.ForeColor = Color.White;
-            x.DefaultCellStyle.BackColor = f;
-            return x;
-        }
+      
 
         public void ModificarPeliculas(int Id, TextBox titulo, TextBox sinopsis, TextBox duracion, ComboBox clasificacion, TextBox genero, TextBox precio)
         {
@@ -103,28 +94,41 @@ namespace Manejador
         public void CargarSala(ComboBox cmbSala, TextBox txtSalaId)
         {
             cmbSala.Items.Clear();
-
             try
             {
                 DataTable datosSala = b.Consultar("SELECT id, nombre, ubicacion FROM Salas", "Salas").Tables[0];
                 foreach (DataRow row in datosSala.Rows)
                 {
-                    cmbSala.Items.Add(new { Nombre = row["nombre"].ToString(), Ubicacion = row["ubicacion"].ToString() });
-                    if (datosSala.Rows.Count > 0)
+                    cmbSala.Items.Add(new { Id = row["id"], Nombre = row["nombre"].ToString(), Ubicacion = row["ubicacion"].ToString() });
+                    cmbSala.SelectedIndexChanged += (sender, e) =>
                     {
+                        if (cmbSala.SelectedItem != null)
+                        {
+                            dynamic sala = cmbSala.SelectedItem;
+                            int salaId = sala.Id;
 
-                        int salaId = Convert.ToInt32(datosSala.Rows[0]["id"]);
-                        txtSalaId.Text = $"Sala: {salaId}";
 
-                    }
-                    else
-                    {
-                        txtSalaId.Text = "Sala: No disponible";
-                        MessageBox.Show("No se encontraron horarios para esta película.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
+                            DataTable datos = b.Consultar(
+                                $"SELECT id FROM Salas WHERE id = {salaId}",
+                                "Salas"
+                            ).Tables[0];
+
+                            if (datos.Rows.Count > 0)
+                            {
+
+                                int salaId1 = Convert.ToInt32(datos.Rows[0]["id"]);
+                                txtSalaId.Text = $"{salaId1}";
+
+                            }
+                            else
+                            {
+                                txtSalaId.Text = "Sala: No disponible";
+                            }
+                        }
+
+                    };
                 }
 
-       
             }
 
             catch (Exception ex)

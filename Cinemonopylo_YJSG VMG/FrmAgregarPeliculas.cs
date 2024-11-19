@@ -21,9 +21,9 @@ namespace Cinemonopylo_YJSG_VMG
         {
             InitializeComponent();
             mu = new ManejadorAdministrador();
-            mu.CargarSala(cmbSala, txtSalaId);
             groupBox3.Visible = true;
             groupBox1.Visible = false;
+            mu.CargarSala(cmbSala, txtSalaId);
         }
         int peliculaId=0;
 
@@ -45,8 +45,8 @@ namespace Cinemonopylo_YJSG_VMG
                     if (resultadoPelicula.ToLower().Contains("éxito"))
                     {
                         peliculaId = mu.ObtenerUltimoId("Peliculas");
-                        var fecha_hora = $"{dtpFecha.Value:yyyy-MM-dd} {dtpHora.Value:HH:mm:ss}";
-                        MessageBox.Show(mu.GuardarHorarios(peliculaId, txtSalaId, fecha_hora, txtCantidad));
+                        string fechaHora = $"{txtFecha.Text} {txtHora.Text}";
+                        MessageBox.Show(mu.GuardarHorarios(peliculaId, txtSalaId, fechaHora, txtCantidad));
                     }
                 }
 
@@ -68,8 +68,7 @@ namespace Cinemonopylo_YJSG_VMG
             txtPrecio.Clear();
             txtSalaId.Clear();
             txtCantidad.Clear();
-            dtpFecha.Value = DateTime.Now;
-            dtpHora.Value = DateTime.Now;
+
         }
 
 

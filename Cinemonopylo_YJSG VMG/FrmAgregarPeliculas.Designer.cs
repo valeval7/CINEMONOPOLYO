@@ -32,8 +32,6 @@
             this.txtSalaId = new System.Windows.Forms.TextBox();
             this.cmbSala = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.dtpHora = new System.Windows.Forms.DateTimePicker();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -57,6 +55,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.txtFecha = new System.Windows.Forms.TextBox();
+            this.txtHora = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -66,11 +66,11 @@
             // 
             this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.txtHora);
+            this.groupBox2.Controls.Add(this.txtFecha);
             this.groupBox2.Controls.Add(this.txtSalaId);
             this.groupBox2.Controls.Add(this.cmbSala);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.dtpHora);
-            this.groupBox2.Controls.Add(this.dtpFecha);
             this.groupBox2.Controls.Add(this.txtCantidad);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label8);
@@ -112,22 +112,6 @@
             this.label11.Size = new System.Drawing.Size(359, 50);
             this.label11.TabIndex = 15;
             this.label11.Text = "SALA ASIGNADA:";
-            // 
-            // dtpHora
-            // 
-            this.dtpHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpHora.Location = new System.Drawing.Point(627, 64);
-            this.dtpHora.Name = "dtpHora";
-            this.dtpHora.Size = new System.Drawing.Size(170, 57);
-            this.dtpHora.TabIndex = 14;
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(351, 64);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(258, 57);
-            this.dtpFecha.TabIndex = 13;
             // 
             // txtCantidad
             // 
@@ -415,6 +399,20 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // txtFecha
+            // 
+            this.txtFecha.Location = new System.Drawing.Point(362, 61);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(188, 57);
+            this.txtFecha.TabIndex = 18;
+            // 
+            // txtHora
+            // 
+            this.txtHora.Location = new System.Drawing.Point(582, 61);
+            this.txtHora.Name = "txtHora";
+            this.txtHora.Size = new System.Drawing.Size(151, 57);
+            this.txtHora.TabIndex = 19;
+            // 
             // FrmAgregarPeliculas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
@@ -460,8 +458,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtSinopsis;
-        private System.Windows.Forms.DateTimePicker dtpHora;
-        private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.TextBox txtGenero;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPrecio;
@@ -476,5 +472,7 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TextBox txtSalaId;
         private System.Windows.Forms.ComboBox cmbSala;
+        private System.Windows.Forms.TextBox txtHora;
+        private System.Windows.Forms.TextBox txtFecha;
     }
 }
