@@ -100,9 +100,9 @@
             this.label2.Location = new System.Drawing.Point(428, 183);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(430, 37);
+            this.label2.Size = new System.Drawing.Size(318, 37);
             this.label2.TabIndex = 36;
-            this.label2.Text = "(Busca por el TITULO O SALA)";
+            this.label2.Text = "(Busca por el TITULO)";
             // 
             // dtgvAdministrador
             // 
@@ -115,7 +115,7 @@
             this.dtgvAdministrador.ReadOnly = true;
             this.dtgvAdministrador.RowHeadersWidth = 82;
             this.dtgvAdministrador.RowTemplate.Height = 33;
-            this.dtgvAdministrador.Size = new System.Drawing.Size(1751, 511);
+            this.dtgvAdministrador.Size = new System.Drawing.Size(1751, 789);
             this.dtgvAdministrador.TabIndex = 39;
             // 
             // txtBuscar
@@ -126,6 +126,7 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(764, 54);
             this.txtBuscar.TabIndex = 38;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // label1
             // 
@@ -164,6 +165,7 @@
             this.btnEliminar.Size = new System.Drawing.Size(137, 124);
             this.btnEliminar.TabIndex = 47;
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -176,6 +178,7 @@
             this.btnModificar.Size = new System.Drawing.Size(137, 124);
             this.btnModificar.TabIndex = 43;
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnAgregar
             // 
@@ -211,10 +214,8 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(310, 100);
-            this.MaximumSize = new System.Drawing.Size(1920, 1200);
-            this.MinimumSize = new System.Drawing.Size(1920, 1200);
             this.Name = "Peliculas";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Peliculas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAdministrador)).EndInit();

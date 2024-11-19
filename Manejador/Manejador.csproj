@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManejadorAdministrador.cs" />
     <Compile Include="ManejadorCliente.cs" />
     <Compile Include="ManejadorLogin.cs" />
     <Compile Include="ManejadorUsuarios.cs" />

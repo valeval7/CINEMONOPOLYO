@@ -70,6 +70,12 @@
     <Compile Include="FrmAgregarUsuarios.Designer.cs">
       <DependentUpon>FrmAgregarUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBuscarPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarPrestamos.Designer.cs">
+      <DependentUpon>FrmBuscarPrestamos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenuTaquilla.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAgregarUsuarios.resx">
       <DependentUpon>FrmAgregarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarPrestamos.resx">
+      <DependentUpon>FrmBuscarPrestamos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuAdministrador.resx">
       <DependentUpon>FrmMenuAdministrador.cs</DependentUpon>

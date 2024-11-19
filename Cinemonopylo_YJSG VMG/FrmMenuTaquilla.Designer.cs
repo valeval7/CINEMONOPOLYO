@@ -109,13 +109,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(2100, 1500);
+            this.ClientSize = new System.Drawing.Size(2408, 1500);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
-            this.Location = new System.Drawing.Point(310, 100);
-            this.MaximumSize = new System.Drawing.Size(2100, 1500);
-            this.MinimumSize = new System.Drawing.Size(2100, 1500);
+            this.MaximumSize = new System.Drawing.Size(3200, 3200);
+            this.MinimumSize = new System.Drawing.Size(2408, 1400);
             this.Name = "FrmMenuTaquilla";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FrmMenuTaquilla";

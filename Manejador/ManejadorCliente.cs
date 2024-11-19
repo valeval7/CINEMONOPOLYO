@@ -30,7 +30,7 @@ namespace Manejador
 
             try
             {
-                DataTable productos = b.Consultar("SELECT nombre FROM Productos", "Productos").Tables[0];
+                DataTable productos = b.Consultar("SELECT id, nombre FROM Productos", "Productos").Tables[0];
                 foreach (DataRow row in productos.Rows)
                 {
                     cmbProductos.Items.Add(new { Producto = row["nombre"].ToString()});
@@ -47,14 +47,11 @@ namespace Manejador
                 {
                     if (cmbPeliculas.SelectedItem != null)
                     {
-                        // Obtén el id de la película seleccionada
                         dynamic peliculaSeleccionada = cmbPeliculas.SelectedItem;
                         int peliculaId = peliculaSeleccionada.Id;
 
-                        // Limpia los horarios
                         cmbHorarios.Items.Clear();
 
-                        // Consulta para obtener sala_id y horarios de la película seleccionada
                         DataTable datosHorarios = b.Consultar(
                             $"SELECT id, sala_id, fecha_hora FROM Horarios WHERE pelicula_id = {peliculaId}",
                             "Horarios"
@@ -66,8 +63,6 @@ namespace Manejador
                             lblHorario.Text = $"Id: {horarioId}";
                             int salaId = Convert.ToInt32(datosHorarios.Rows[0]["sala_id"]);
                             lblSala.Text = $"Sala: {salaId}";
-
-                            // Agrega los horarios al ComboBox
                             foreach (DataRow row in datosHorarios.Rows)
                             {
                                 DateTime fechaHora = Convert.ToDateTime(row["fecha_hora"]);

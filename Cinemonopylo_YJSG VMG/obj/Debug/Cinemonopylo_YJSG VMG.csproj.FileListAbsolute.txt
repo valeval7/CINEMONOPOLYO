@@ -61,3 +61,57 @@ C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Pre
 C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.Peliculas.resources
 C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmAgregarPeliculas.resources
 C:\Users\valer\Desktop\Cinemonopylo_YJSG VMG\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmAgregarSalas.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\Cinemonopylo_YJSG VMG.exe.config
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\Cinemonopylo_YJSG VMG.exe
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\Cinemonopylo_YJSG VMG.pdb
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\Manejador.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\AccesoDatos.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\MySql.Data.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\Google.Protobuf.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\ZstdSharp.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\System.Memory.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\System.Buffers.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\System.IO.Pipelines.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\Manejador.pdb
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\AccesoDatos.pdb
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\MySql.Data.xml
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\Google.Protobuf.pdb
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\Google.Protobuf.xml
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\System.Memory.xml
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\System.Buffers.xml
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\System.IO.Pipelines.xml
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.exe.config
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmAgregarPeliculas.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmAgregarProductos.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmAgregarSalas.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Presentacion_TallerAutomotiz.FrmAgregarUsuarios.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmMenuAdministrador.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmMenuTaquilla.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.Menu.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.FrmComprar_Boletos.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Presentacion_TallerAutomotiz.FrmLogin.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Presentacion_TallerAutomotiz.FrmUsuarios.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.Peliculas.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG_VMG.Properties.Resources.resources
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.csproj.GenerateResource.cache
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemono.4799D91F.Up2Date
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.exe
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\Cinemonopylo_YJSG VMG.pdb
+C:\Users\user\Desktop\CINEMONOPOLYO\Cinemonopylo_YJSG VMG\obj\Debug\PROYECTO.FrmBuscarPrestamos.resources

@@ -29,29 +29,30 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cmbRol = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtClave = new System.Windows.Forms.TextBox();
+            this.txtSalaId = new System.Windows.Forms.TextBox();
+            this.cmbSala = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dtpHora = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.cmbClasificacion = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt3 = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtGenero = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtSinopsis = new System.Windows.Forms.TextBox();
+            this.txtDuracion = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtSinopsis = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnExistente = new System.Windows.Forms.Button();
             this.btnNueva = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.btnExistente = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -65,11 +66,12 @@
             // 
             this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.txtSalaId);
+            this.groupBox2.Controls.Add(this.cmbSala);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.txtClave);
+            this.groupBox2.Controls.Add(this.dtpHora);
+            this.groupBox2.Controls.Add(this.dtpFecha);
+            this.groupBox2.Controls.Add(this.txtCantidad);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -82,39 +84,58 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de Horarios:";
             // 
-            // cmbRol
+            // txtSalaId
             // 
-            this.cmbRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbRol.FormattingEnabled = true;
-            this.cmbRol.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D"});
-            this.cmbRol.Location = new System.Drawing.Point(389, 487);
-            this.cmbRol.Name = "cmbRol";
-            this.cmbRol.Size = new System.Drawing.Size(111, 45);
-            this.cmbRol.TabIndex = 12;
+            this.txtSalaId.Location = new System.Drawing.Point(565, 209);
+            this.txtSalaId.Name = "txtSalaId";
+            this.txtSalaId.ReadOnly = true;
+            this.txtSalaId.Size = new System.Drawing.Size(111, 57);
+            this.txtSalaId.TabIndex = 17;
             // 
-            // label9
+            // cmbSala
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
-            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(23, 482);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(340, 50);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "CLASIFICACION:";
+            this.cmbSala.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSala.FormattingEnabled = true;
+            this.cmbSala.Location = new System.Drawing.Point(402, 217);
+            this.cmbSala.Name = "cmbSala";
+            this.cmbSala.Size = new System.Drawing.Size(141, 45);
+            this.cmbSala.TabIndex = 16;
             // 
-            // txtClave
+            // label11
             // 
-            this.txtClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClave.Location = new System.Drawing.Point(541, 150);
-            this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(151, 44);
-            this.txtClave.TabIndex = 7;
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
+            this.label11.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Location = new System.Drawing.Point(22, 212);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(359, 50);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "SALA ASIGNADA:";
+            // 
+            // dtpHora
+            // 
+            this.dtpHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHora.Location = new System.Drawing.Point(627, 64);
+            this.dtpHora.Name = "dtpHora";
+            this.dtpHora.Size = new System.Drawing.Size(170, 57);
+            this.dtpHora.TabIndex = 14;
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(351, 64);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(258, 57);
+            this.dtpFecha.TabIndex = 13;
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidad.Location = new System.Drawing.Point(541, 150);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(151, 44);
+            this.txtCantidad.TabIndex = 7;
             // 
             // label4
             // 
@@ -140,17 +161,43 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "FECHA y HORA:";
             // 
+            // cmbClasificacion
+            // 
+            this.cmbClasificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbClasificacion.FormattingEnabled = true;
+            this.cmbClasificacion.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D"});
+            this.cmbClasificacion.Location = new System.Drawing.Point(389, 487);
+            this.cmbClasificacion.Name = "cmbClasificacion";
+            this.cmbClasificacion.Size = new System.Drawing.Size(111, 45);
+            this.cmbClasificacion.TabIndex = 12;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
+            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(23, 482);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(340, 50);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "CLASIFICACION:";
+            // 
             // groupBox1
             // 
             this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.txtPrecio);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtGenero);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtSinopsis);
-            this.groupBox1.Controls.Add(this.txt3);
-            this.groupBox1.Controls.Add(this.cmbRol);
+            this.groupBox1.Controls.Add(this.txtDuracion);
+            this.groupBox1.Controls.Add(this.cmbClasificacion);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label5);
@@ -166,13 +213,63 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la pelicula:";
             // 
-            // txt3
+            // txtPrecio
             // 
-            this.txt3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt3.Location = new System.Drawing.Point(34, 427);
-            this.txt3.Name = "txt3";
-            this.txt3.Size = new System.Drawing.Size(242, 44);
-            this.txt3.TabIndex = 5;
+            this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecio.Location = new System.Drawing.Point(321, 635);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(245, 44);
+            this.txtPrecio.TabIndex = 16;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
+            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.Location = new System.Drawing.Point(312, 567);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(174, 50);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "PRECIO:";
+            // 
+            // txtGenero
+            // 
+            this.txtGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGenero.Location = new System.Drawing.Point(38, 635);
+            this.txtGenero.Name = "txtGenero";
+            this.txtGenero.Size = new System.Drawing.Size(242, 44);
+            this.txtGenero.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(23, 567);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(194, 50);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "GENERO:";
+            // 
+            // txtSinopsis
+            // 
+            this.txtSinopsis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSinopsis.Location = new System.Drawing.Point(34, 265);
+            this.txtSinopsis.Multiline = true;
+            this.txtSinopsis.Name = "txtSinopsis";
+            this.txtSinopsis.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtSinopsis.Size = new System.Drawing.Size(280, 76);
+            this.txtSinopsis.TabIndex = 6;
+            // 
+            // txtDuracion
+            // 
+            this.txtDuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDuracion.Location = new System.Drawing.Point(34, 427);
+            this.txtDuracion.Name = "txtDuracion";
+            this.txtDuracion.Size = new System.Drawing.Size(242, 44);
+            this.txtDuracion.TabIndex = 5;
             // 
             // txtNombre
             // 
@@ -218,72 +315,6 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "TITULO:";
             // 
-            // txtSinopsis
-            // 
-            this.txtSinopsis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSinopsis.Location = new System.Drawing.Point(34, 265);
-            this.txtSinopsis.Multiline = true;
-            this.txtSinopsis.Name = "txtSinopsis";
-            this.txtSinopsis.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtSinopsis.Size = new System.Drawing.Size(280, 76);
-            this.txtSinopsis.TabIndex = 6;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(351, 64);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(258, 57);
-            this.dateTimePicker1.TabIndex = 13;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(627, 64);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(170, 57);
-            this.dateTimePicker2.TabIndex = 14;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(38, 635);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(242, 44);
-            this.textBox1.TabIndex = 14;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(23, 567);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(194, 50);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "GENERO:";
-            // 
-            // txtPrecio
-            // 
-            this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(321, 635);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(245, 44);
-            this.txtPrecio.TabIndex = 16;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
-            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(312, 567);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(174, 50);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "PRECIO:";
-            // 
             // groupBox3
             // 
             this.groupBox3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -293,25 +324,12 @@
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.DarkRed;
-            this.groupBox3.Location = new System.Drawing.Point(967, 68);
+            this.groupBox3.Location = new System.Drawing.Point(973, 68);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(879, 704);
             this.groupBox3.TabIndex = 49;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Selecciona una opción:";
-            // 
-            // btnExistente
-            // 
-            this.btnExistente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
-            this.btnExistente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExistente.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnExistente.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnExistente.Location = new System.Drawing.Point(171, 200);
-            this.btnExistente.Name = "btnExistente";
-            this.btnExistente.Size = new System.Drawing.Size(520, 63);
-            this.btnExistente.TabIndex = 5;
-            this.btnExistente.Text = "BUSCAR PELICULA EXISTENTE";
-            this.btnExistente.UseVisualStyleBackColor = false;
             // 
             // btnNueva
             // 
@@ -325,27 +343,21 @@
             this.btnNueva.TabIndex = 6;
             this.btnNueva.Text = "AGREGAR NUEVA PELICULA";
             this.btnNueva.UseVisualStyleBackColor = false;
+            this.btnNueva.Click += new System.EventHandler(this.btnNueva_Click);
             // 
-            // comboBox1
+            // btnExistente
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(402, 217);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(141, 45);
-            this.comboBox1.TabIndex = 16;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
-            this.label11.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(22, 212);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(359, 50);
-            this.label11.TabIndex = 15;
-            this.label11.Text = "SALA ASIGNADA:";
+            this.btnExistente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(140)))), ((int)(((byte)(106)))));
+            this.btnExistente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExistente.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnExistente.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnExistente.Location = new System.Drawing.Point(171, 200);
+            this.btnExistente.Name = "btnExistente";
+            this.btnExistente.Size = new System.Drawing.Size(520, 63);
+            this.btnExistente.TabIndex = 5;
+            this.btnExistente.Text = "BUSCAR PELICULA EXISTENTE";
+            this.btnExistente.UseVisualStyleBackColor = false;
+            this.btnExistente.Click += new System.EventHandler(this.btnExistente_Click);
             // 
             // label2
             // 
@@ -385,6 +397,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(151, 146);
             this.btnCancelar.TabIndex = 50;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -400,6 +413,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(135, 135);
             this.btnGuardar.TabIndex = 49;
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FrmAgregarPeliculas
             // 
@@ -417,9 +431,12 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1920, 1200);
+            this.MinimumSize = new System.Drawing.Size(1920, 1200);
             this.Name = "FrmAgregarPeliculas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAgregarPeliculas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -431,32 +448,33 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox cmbRol;
+        private System.Windows.Forms.ComboBox cmbClasificacion;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtClave;
+        private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txt3;
+        private System.Windows.Forms.TextBox txtDuracion;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtSinopsis;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DateTimePicker dtpHora;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.TextBox txtGenero;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnNueva;
         private System.Windows.Forms.Button btnExistente;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.TextBox txtSalaId;
+        private System.Windows.Forms.ComboBox cmbSala;
     }
 }
