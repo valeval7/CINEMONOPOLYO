@@ -13,13 +13,15 @@ namespace Cinemonopylo_YJSG_VMG
 {
     public partial class FrmComprar_Boletos : Form
     {
-        ManejadorCliente manejador = new ManejadorCliente();
+        ManejadorCliente ml;
         int IdUsuario = 0;
+        string MetodoPago = "TARJETA DE CREDITO";
 
         public FrmComprar_Boletos()
         {
             InitializeComponent();
-            manejador.InicializarFormulario(cmbProductos, cmbPeliculas, cmbHorarios, pnlAsientos, btnConfirmar, pnlResumen, lblSala, lblHorario);
+            ml = new ManejadorCliente();
+            ml.InicializarFormulario(cmbProductos, cmbPeliculas, cmbHorarios, pnlAsientos, btnConfirmar, pnlResumen, lblSala, lblHorario, lblUser, lblTotal);
             IdUsuario = ManejadorLogin.UserId;
             if(ManejadorLogin.Tipo.Equals("Cliente"))
             {
@@ -45,7 +47,23 @@ namespace Cinemonopylo_YJSG_VMG
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            manejador.GuardarVenta(int.Parse(lblHorario.Text), IdUsuario);
+            try
+            {
+                ml.Resumen(lblHorario,
+                           cmbHorarios,
+                           cmbPeliculas,
+                           pnlAsientos,
+                           pnlResumen,
+                           lblSala,
+                           lblTotal);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al confirmar la venta: {ex.Message}",
+                               "Error",
+                               MessageBoxButtons.OK,
+                               MessageBoxIcon.Error);
+            }
         }
     }
 }

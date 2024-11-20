@@ -105,8 +105,6 @@ namespace Manejador
                         {
                             dynamic sala = cmbSala.SelectedItem;
                             int salaId = sala.Id;
-
-
                             DataTable datos = b.Consultar(
                                 $"SELECT id FROM Salas WHERE id = {salaId}",
                                 "Salas"

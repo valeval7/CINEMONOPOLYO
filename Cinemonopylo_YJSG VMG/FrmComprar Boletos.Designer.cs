@@ -51,10 +51,12 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.grbAlimentos = new System.Windows.Forms.GroupBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cmbProductos = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.grbAlimentos.SuspendLayout();
             this.SuspendLayout();
@@ -244,6 +246,7 @@
             // lblHorario
             // 
             this.lblHorario.AutoSize = true;
+            this.lblHorario.BackColor = System.Drawing.Color.Transparent;
             this.lblHorario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblHorario.Location = new System.Drawing.Point(1145, 25);
             this.lblHorario.Name = "lblHorario";
@@ -286,6 +289,22 @@
             this.grbAlimentos.TabStop = false;
             this.grbAlimentos.Text = "ALIMENTOS";
             // 
+            // txtCantidad
+            // 
+            this.txtCantidad.Location = new System.Drawing.Point(40, 299);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(117, 67);
+            this.txtCantidad.TabIndex = 16;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(30, 232);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(158, 56);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Cantidad:";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -303,21 +322,27 @@
             this.cmbProductos.Size = new System.Drawing.Size(499, 64);
             this.cmbProductos.TabIndex = 3;
             // 
-            // label10
+            // lblUser
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(30, 232);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(158, 56);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Cantidad:";
+            this.lblUser.AutoSize = true;
+            this.lblUser.BackColor = System.Drawing.Color.Transparent;
+            this.lblUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblUser.Location = new System.Drawing.Point(1145, 121);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(123, 56);
+            this.lblUser.TabIndex = 14;
+            this.lblUser.Text = "lblUser";
             // 
-            // txtCantidad
+            // lblTotal
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(40, 299);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(117, 67);
-            this.txtCantidad.TabIndex = 16;
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.BackColor = System.Drawing.Color.Transparent;
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTotal.Location = new System.Drawing.Point(1061, 328);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(118, 56);
+            this.lblTotal.TabIndex = 15;
+            this.lblTotal.Text = "TOTAL";
             // 
             // FrmComprar_Boletos
             // 
@@ -326,6 +351,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(2100, 1557);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.lblUser);
             this.Controls.Add(this.grbAlimentos);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblHorario);
@@ -387,5 +414,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cmbProductos;
         private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Label lblTotal;
     }
 }
