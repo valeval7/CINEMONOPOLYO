@@ -204,6 +204,7 @@
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1200);
+            this.Controls.Add(this.dtgvAdministrador);
             this.Controls.Add(this.lblEliminar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.lblModificar);
@@ -213,7 +214,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dtgvAdministrador);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;

@@ -59,7 +59,7 @@ namespace PROYECTO
 
         private void dtgvDatos_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-           
+            fila = e.RowIndex; columna = e.ColumnIndex;
         }
     }
 }

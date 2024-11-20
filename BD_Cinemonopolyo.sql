@@ -238,8 +238,6 @@ CALL p_InsertarGenerico(
     '"Sala 3"'
 );
 
--- Insertar registros en la tabla Horarios
--- Asumiendo que las IDs generadas para las Peliculas y Salas son 1, 2, 3 respectivamente
 CALL p_InsertarGenerico(
     'Horarios', 
     'pelicula_id, sala_id, fecha_hora, boletos_existentes', 
@@ -257,8 +255,6 @@ CALL p_InsertarGenerico(
     'pelicula_id, sala_id, fecha_hora, boletos_existentes', 
     '3, 3, "2024-11-18 21:00:00", 80'
 );
-
-
 
 
 DELIMITER //
@@ -280,5 +276,4 @@ BEGIN
 END //
 DELIMITER ;
 
-SELECT * FROM USUARIOS;
 

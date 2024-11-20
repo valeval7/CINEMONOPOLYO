@@ -199,7 +199,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(1920, 1200);
+            this.ClientSize = new System.Drawing.Size(2558, 1440);
             this.Controls.Add(this.lblEliminar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.lblModificar);
@@ -214,10 +214,11 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(310, 100);
+            this.MaximumSize = new System.Drawing.Size(2560, 1440);
+            this.MinimumSize = new System.Drawing.Size(2558, 1440);
             this.Name = "Peliculas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Peliculas";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAdministrador)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

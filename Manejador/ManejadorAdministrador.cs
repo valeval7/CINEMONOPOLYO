@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,9 +19,8 @@ namespace Manejador
         {
             try
             {
-                string campos = "titulo, sinopsis, duracion, clasificacion, genero, precio";
-                string valores = $"'{titulo.Text}', '{sinopsis.Text}', '{duracion.Text}', '{clasificacion.Text}', '{genero.Text}', '{precio.Text}'";
-                return b.Comando($"CALL p_InsertarGenerico('Peliculas', '{campos}', '{valores}')");
+                return b.Comando($"INSERT INTO Peliculas (titulo, sinopsis, duracion, clasificacion, genero, precio) " +
+                          $"VALUES ('{titulo.Text}', '{sinopsis.Text}', '{duracion.Text}', '{clasificacion.Text}', '{genero.Text}', {precio.Text})");
             }
             catch (Exception)
             {
@@ -61,9 +61,8 @@ namespace Manejador
         {
             try
             {
-                string campos = "pelicula_id, sala_id, fecha_hora, boletos_existentes";
-                string valores = $"'{peliculaId}', '{txtSalaId.Text}', '{fechaHora}', '{txtCantidad.Text}'";
-                return b.Comando($"CALL p_InsertarGenerico('Horarios', '{campos}', '{valores}')");
+                return b.Comando($"INSERT INTO Horarios (pelicula_id, sala_id, fecha_hora, boletos_existentes) " +
+                                 $"VALUES ('{peliculaId}', '{txtSalaId.Text}', '{fechaHora}', {txtCantidad.Text})");
             }
             catch (Exception)
             {
@@ -137,8 +136,20 @@ namespace Manejador
             }
         }
 
+        public string AgregarSala(TextBox txtNombre, TextBox txtUbicacion)
+        {
+            try
+            {
+                string campos = "nombre, ubicacion";
+                string valores = $"\"'{txtNombre.Text.Replace("'", "''")}', '{txtUbicacion.Text.Replace("'", "''")}'\"";
 
-
+                return b.Comando($"CALL p_InsertarGenerico('Salas', '{campos}', {valores})");
+            }
+            catch (Exception)
+            {
+                return "Error de valor";
+            }
+        }
 
 
 

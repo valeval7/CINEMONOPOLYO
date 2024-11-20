@@ -31,22 +31,32 @@ namespace Cinemonopylo_YJSG_VMG
         {
             try
             {
+                string fechaHora = $"{txtFecha.Text} {txtHora.Text}";
+
+                // Si es una película existente (se seleccionó de la búsqueda)
                 if (Peliculas.Id > 0)
                 {
-                    mu.ModificarPeliculas(Peliculas.Id, txtNombre, txtSinopsis, txtDuracion, cmbClasificacion, txtGenero, txtPrecio);
-                    MessageBox.Show("Película modificada correctamente.");
-                    Peliculas.Id = 0;
+                    // Solo guardamos el horario usando el ID de la película seleccionada
+                    string resultadoHorario = mu.GuardarHorarios(Peliculas.Id, txtSalaId, fechaHora, txtCantidad);
+                    MessageBox.Show(resultadoHorario);
                 }
-                else
+                else // Si es una película nueva
                 {
+                    // Primero guardamos la película
                     string resultadoPelicula = mu.GuardarPeliculas(txtNombre, txtSinopsis, txtDuracion, cmbClasificacion, txtGenero, txtPrecio);
-                    MessageBox.Show(resultadoPelicula);
 
-                    if (resultadoPelicula.ToLower().Contains("éxito"))
+                    if (resultadoPelicula.ToLower().Contains("correcto"))
                     {
-                        peliculaId = mu.ObtenerUltimoId("Peliculas");
-                        string fechaHora = $"{txtFecha.Text} {txtHora.Text}";
-                        MessageBox.Show(mu.GuardarHorarios(peliculaId, txtSalaId, fechaHora, txtCantidad));
+                        // Si la película se guardó correctamente, obtenemos su ID
+                        int peliculaId = mu.ObtenerUltimoId("Peliculas");
+
+                        // Y luego guardamos el horario con el ID de la película nueva
+                        string resultadoHorario = mu.GuardarHorarios(peliculaId, txtSalaId, fechaHora, txtCantidad);
+                        MessageBox.Show(resultadoHorario);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al guardar la película: " + resultadoPelicula);
                     }
                 }
 
@@ -58,6 +68,7 @@ namespace Cinemonopylo_YJSG_VMG
             }
         }
 
+
         private void LimpiarCampos()
         {
             txtNombre.Clear();
@@ -68,6 +79,9 @@ namespace Cinemonopylo_YJSG_VMG
             txtPrecio.Clear();
             txtSalaId.Clear();
             txtCantidad.Clear();
+            txtFecha.Clear();
+            txtHora.Clear();
+            peliculaId = 0;
 
         }
 
@@ -81,30 +95,32 @@ namespace Cinemonopylo_YJSG_VMG
         {
             groupBox3.Visible = false;
             groupBox1.Visible = true;
+            peliculaId = 0;
         }
 
         private void btnExistente_Click(object sender, EventArgs e)
         {
-            FrmBuscarPrestamos b = new FrmBuscarPrestamos();
-            b.ShowDialog();
+            FrmBuscarPrestamos buscar = new FrmBuscarPrestamos();
+            buscar.ShowDialog();
+
+            // Validar si se seleccionó una película en el formulario de búsqueda
             if (FrmBuscarPrestamos.IdPelicula > 0)
             {
-                peliculaId = FrmBuscarPrestamos.IdPelicula;
-                txtNombre.Text = FrmBuscarPrestamos.titulo.ToString();
-                txtSinopsis.Text = FrmBuscarPrestamos.sinopsis.ToString();
+                peliculaId = FrmBuscarPrestamos.IdPelicula; // Asignar ID de la película seleccionada
+                txtNombre.Text = FrmBuscarPrestamos.titulo;
+                txtSinopsis.Text = FrmBuscarPrestamos.sinopsis;
                 txtDuracion.Text = FrmBuscarPrestamos.duracion.ToString();
-                cmbClasificacion.Text = FrmBuscarPrestamos.clasificacion.ToString();
-                txtGenero.Text = FrmBuscarPrestamos.genero.ToString();
+                cmbClasificacion.Text = FrmBuscarPrestamos.clasificacion;
+                txtGenero.Text = FrmBuscarPrestamos.genero;
                 txtPrecio.Text = FrmBuscarPrestamos.precio.ToString();
+
                 groupBox3.Visible = false;
-                groupBox1.Visible = true;
+                groupBox1.Visible = true; // Mostrar los campos para editar/guardar horario
             }
-            txtNombre.Focus();
-            txtSinopsis.Focus();
-            txtDuracion.Focus();
-            cmbClasificacion.Focus();
-            txtGenero.Focus();
-            txtPrecio.Focus();
+            else
+            {
+                MessageBox.Show("No se seleccionó ninguna película.");
+            }
         }
     }
 }

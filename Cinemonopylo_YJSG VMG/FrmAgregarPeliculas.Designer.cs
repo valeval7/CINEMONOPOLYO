@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtHora = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
             this.txtSalaId = new System.Windows.Forms.TextBox();
             this.cmbSala = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -55,8 +57,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.txtFecha = new System.Windows.Forms.TextBox();
-            this.txtHora = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -68,28 +68,47 @@
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.txtHora);
             this.groupBox2.Controls.Add(this.txtFecha);
-            this.groupBox2.Controls.Add(this.txtSalaId);
             this.groupBox2.Controls.Add(this.cmbSala);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.txtCantidad);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.txtSalaId);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.DarkRed;
-            this.groupBox2.Location = new System.Drawing.Point(967, 778);
+            this.groupBox2.Location = new System.Drawing.Point(867, 778);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(879, 282);
+            this.groupBox2.Size = new System.Drawing.Size(945, 282);
             this.groupBox2.TabIndex = 47;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de Horarios:";
             // 
+            // txtHora
+            // 
+            this.txtHora.ForeColor = System.Drawing.Color.Brown;
+            this.txtHora.Location = new System.Drawing.Point(656, 61);
+            this.txtHora.Name = "txtHora";
+            this.txtHora.Size = new System.Drawing.Size(207, 57);
+            this.txtHora.TabIndex = 19;
+            this.txtHora.Text = "HH:MM:SS";
+            // 
+            // txtFecha
+            // 
+            this.txtFecha.ForeColor = System.Drawing.Color.Brown;
+            this.txtFecha.Location = new System.Drawing.Point(362, 61);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(272, 57);
+            this.txtFecha.TabIndex = 18;
+            this.txtFecha.Text = "YYYY-MM-DD";
+            // 
             // txtSalaId
             // 
-            this.txtSalaId.Location = new System.Drawing.Point(565, 209);
+            this.txtSalaId.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold);
+            this.txtSalaId.Location = new System.Drawing.Point(270, 212);
             this.txtSalaId.Name = "txtSalaId";
             this.txtSalaId.ReadOnly = true;
-            this.txtSalaId.Size = new System.Drawing.Size(111, 57);
+            this.txtSalaId.Size = new System.Drawing.Size(111, 43);
             this.txtSalaId.TabIndex = 17;
             // 
             // cmbSala
@@ -98,7 +117,7 @@
             this.cmbSala.FormattingEnabled = true;
             this.cmbSala.Location = new System.Drawing.Point(402, 217);
             this.cmbSala.Name = "cmbSala";
-            this.cmbSala.Size = new System.Drawing.Size(141, 45);
+            this.cmbSala.Size = new System.Drawing.Size(451, 45);
             this.cmbSala.TabIndex = 16;
             // 
             // label11
@@ -190,9 +209,9 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.DarkRed;
-            this.groupBox1.Location = new System.Drawing.Point(973, 68);
+            this.groupBox1.Location = new System.Drawing.Point(867, 68);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(879, 695);
+            this.groupBox1.Size = new System.Drawing.Size(945, 695);
             this.groupBox1.TabIndex = 48;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la pelicula:";
@@ -308,9 +327,9 @@
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.DarkRed;
-            this.groupBox3.Location = new System.Drawing.Point(973, 68);
+            this.groupBox3.Location = new System.Drawing.Point(867, 68);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(879, 704);
+            this.groupBox3.Size = new System.Drawing.Size(945, 704);
             this.groupBox3.TabIndex = 49;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Selecciona una opción:";
@@ -398,20 +417,6 @@
             this.btnGuardar.TabIndex = 49;
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(362, 61);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(188, 57);
-            this.txtFecha.TabIndex = 18;
-            // 
-            // txtHora
-            // 
-            this.txtHora.Location = new System.Drawing.Point(582, 61);
-            this.txtHora.Name = "txtHora";
-            this.txtHora.Size = new System.Drawing.Size(151, 57);
-            this.txtHora.TabIndex = 19;
             // 
             // FrmAgregarPeliculas
             // 

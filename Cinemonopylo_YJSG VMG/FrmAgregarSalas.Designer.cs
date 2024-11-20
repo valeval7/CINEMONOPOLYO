@@ -33,9 +33,9 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtClave = new System.Windows.Forms.TextBox();
+            this.txtUbi = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -78,6 +78,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(151, 146);
             this.btnCancelar.TabIndex = 46;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -93,6 +94,7 @@
             this.btnGuardar.Size = new System.Drawing.Size(135, 135);
             this.btnGuardar.TabIndex = 45;
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label8
             // 
@@ -106,13 +108,13 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "NOMBRE:";
             // 
-            // txtUser
+            // txtNombre
             // 
-            this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(323, 64);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(389, 44);
-            this.txtUser.TabIndex = 6;
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(323, 64);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(389, 44);
+            this.txtNombre.TabIndex = 6;
             // 
             // label4
             // 
@@ -126,21 +128,21 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "UBICACION:";
             // 
-            // txtClave
+            // txtUbi
             // 
-            this.txtClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClave.Location = new System.Drawing.Point(323, 144);
-            this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(389, 44);
-            this.txtClave.TabIndex = 7;
+            this.txtUbi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUbi.Location = new System.Drawing.Point(323, 144);
+            this.txtUbi.Name = "txtUbi";
+            this.txtUbi.Size = new System.Drawing.Size(389, 44);
+            this.txtUbi.TabIndex = 7;
             // 
             // groupBox2
             // 
             this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.txtClave);
+            this.groupBox2.Controls.Add(this.txtUbi);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.txtUser);
+            this.groupBox2.Controls.Add(this.txtNombre);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -170,7 +172,6 @@
             this.Name = "FrmAgregarSalas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAgregarSalas";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -184,9 +185,9 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtClave;
+        private System.Windows.Forms.TextBox txtUbi;
         private System.Windows.Forms.GroupBox groupBox2;
     }
 }
